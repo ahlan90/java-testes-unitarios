@@ -25,7 +25,6 @@ public class RemoveImparesTest {
         // Agora vamos chamar nossa funcao que irá resolver nosso problema
         RemoveImpares removedor = new RemoveImpares();
         List<Integer> listaOriginalAlterada = removedor.removeImparesLista(listaOriginal);
-        // OBS: Como ainda não implementamos a funcionalidade ela não irá funcionar
         
         // Simulando lista de dados que será retornada na funcao
         List<Integer> listaRemovidos = new ArrayList<>();

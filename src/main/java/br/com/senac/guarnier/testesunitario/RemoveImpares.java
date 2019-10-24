@@ -9,12 +9,16 @@ import java.util.List;
  */
 public class RemoveImpares {
     
-    
     public List<Integer> removeImparesLista(List<Integer> lista){
         
         List<Integer> listaDeRetorno = new ArrayList<>();
-        
-        // Repare que nada foi implementado ainda, logo o teste irá falhar
+        listaDeRetorno.addAll(lista);
+         
+        for(Integer itemLista : lista){
+            if(itemLista % 2 != 0){
+                listaDeRetorno.remove(itemLista);
+            }
+        }  
         
         return listaDeRetorno;
     }

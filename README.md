@@ -1,6 +1,8 @@
   
 # Como fazer os testes:
 
+Para executar os comandos git, você deve estar no diretorio do projeto clonado com o Git Bash;
+
 # Passo 1:
 - Crie a classe Exercicio1.java e Exercicio1Teste.java:
 

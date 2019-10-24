@@ -1,4 +1,5 @@
 
+import br.com.senac.guarnier.testesunitario.RemoveImpares;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -21,10 +22,10 @@ public class RemoveImparesTest {
         listaOriginal.add(4);
         listaOriginal.add(7);
         
-        // Nesse momento o nosso teste começa a falhar, então devemos
-        // implementar a solução, por via das duvidas vc pode comentar
-        // as linhas que adiciona o numero 5 e 7 para ver que ela vai
-        // funcionar
+        // Agora vamos chamar nossa funcao que irá resolver nosso problema
+        RemoveImpares removedor = new RemoveImpares();
+        List<Integer> listaOriginalAlterada = removedor.removeImparesLista(listaOriginal);
+        // OBS: Como ainda não implementamos a funcionalidade ela não irá funcionar
         
         // Simulando lista de dados que será retornada na funcao
         List<Integer> listaRemovidos = new ArrayList<>();
@@ -32,7 +33,7 @@ public class RemoveImparesTest {
         listaRemovidos.add(4);
 
         // Metodo que compara se as listas sao mesmo iguais
-        assertEquals(listaOriginal, listaRemovidos);
+        assertEquals(listaOriginalAlterada, listaRemovidos);
     }
     
 }
